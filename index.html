@@ -254,6 +254,20 @@ footer .lat{font-size:19px;color:var(--ink2);letter-spacing:.2em}
 .fb-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .fb-follow-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 20px;background:#1877F2;color:#fff!important;text-decoration:none;font-size:14.5px;font-weight:700;border:1px solid #1877F2}
 .fb-follow-btn svg{width:17px;height:17px}
+/* Bottom contact — three distinct Facebook identities */
+.fb-contact{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+.fb-contact h4{font-family:"Noto Serif TC",serif;font-size:17px;margin:0 0 4px;color:var(--ink)}
+.fb-contact p.fb-contact-note{margin:0 0 14px;font-size:13.5px;color:var(--muted)}
+.fb-links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.fb-link-card{display:flex;flex-direction:column;gap:3px;background:var(--surface2);border:1px solid var(--line2);padding:16px 18px;text-decoration:none;color:var(--ink);min-height:44px}
+.fb-link-card:hover{border-color:#1877F2}
+.fb-link-card .fb-kind{font-size:12px;letter-spacing:.14em;font-weight:700;color:#1877F2;text-transform:uppercase}
+.fb-link-card .fb-name{font-family:"Noto Serif TC",serif;font-size:18px;font-weight:700;line-height:1.35;color:var(--ink)}
+.fb-link-card .fb-url{font-size:13px;color:var(--wine);font-weight:700;word-break:break-all}
+.fb-link-card .fb-desc{font-size:13px;color:var(--ink2);line-height:1.6;margin-top:4px}
+footer .fb-footer-links{display:flex;gap:8px 18px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+footer .fb-footer-links a{font-weight:700;text-decoration:none}
+@media (max-width:900px){.fb-links{grid-template-columns:1fr}}
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr;min-height:0}
   .hero-copy{padding:38px 0 30px}
@@ -1151,6 +1165,30 @@ footer .lat{font-size:19px;color:var(--ink2);letter-spacing:.2em}
           <li><b>唔誇大承諾</b>——我哋唔會誇大歐洲一定平；平唔平、抵唔抵，報價出嚟你自己比較完先決定。</li>
         </ul>
         <p style="margin-bottom:0"><b>行動呼籲：</b>想知歐洲價／想訂邊款，DM 我哋報價——cap 低款式圖或打款式名就得，我哋幫你喺歐洲訂返香港。</p>
+        <div class="fb-contact" aria-label="Facebook 聯絡連結">
+          <h4>喺 Facebook 搵我哋</h4>
+          <p class="fb-contact-note">以下係三個唔同嘅 Facebook 身份，唔好撈亂：帳號係 Paris Lo 本人、專頁係 Paris Buyer、另有一個群組。</p>
+          <div class="fb-links">
+            <a class="fb-link-card" href="https://www.facebook.com/paris2cbuyer" target="_blank" rel="noopener">
+              <span class="fb-kind">Facebook 帳號</span>
+              <span class="fb-name">Paris Lo</span>
+              <span class="fb-url">facebook.com/paris2cbuyer ↗</span>
+              <span class="fb-desc">個人帳號 — DM 查詢、跟進訂單，搵 Paris Lo 本人。</span>
+            </a>
+            <a class="fb-link-card" href="https://www.facebook.com/ParisBuyerHK/" target="_blank" rel="noopener">
+              <span class="fb-kind">Facebook 專頁</span>
+              <span class="fb-name">Paris Buyer</span>
+              <span class="fb-url">facebook.com/ParisBuyerHK ↗</span>
+              <span class="fb-desc">官方專頁 — 睇最新潮流帖文同歐洲代購資訊。</span>
+            </a>
+            <a class="fb-link-card" href="https://www.facebook.com/groups/paris2cbuyer" target="_blank" rel="noopener">
+              <span class="fb-kind">Facebook 群組：歐洲名牌特搜群</span>
+              <span class="fb-name">facebook.com/groups/paris2cbuyer</span>
+              <span class="fb-url">加入群組 ↗</span>
+              <span class="fb-desc">群組 — 加入同其他名牌同好交流分享。</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="cta-band">
@@ -1227,7 +1265,12 @@ footer .lat{font-size:19px;color:var(--ink2);letter-spacing:.2em}
 <footer>
   <div class="wrap">
     <div class="lat">ATELIER · AW26</div>
-    <p>2026 秋冬名牌潮流一文看清 — 資料截至 2026 年 11 月 15 日（香港時間）<br>睇啱邊款？DM 我哋問歐洲價 — 歐洲代購任何名牌返香港，報價以查詢為準。<br><a href="https://www.facebook.com/ParisBuyerHK" target="_blank" rel="noopener" style="font-weight:700">Facebook 專頁：ParisBuyerHK — facebook.com/ParisBuyerHK ↗</a>。</p>
+    <p>2026 秋冬名牌潮流一文看清 — 資料截至 2026 年 11 月 15 日（香港時間）<br>睇啱邊款？DM 我哋問歐洲價 — 歐洲代購任何名牌返香港，報價以查詢為準。</p>
+    <nav class="fb-footer-links" aria-label="Facebook 連結">
+      <a href="https://www.facebook.com/paris2cbuyer" target="_blank" rel="noopener">Facebook 帳號：Paris Lo ↗</a>
+      <a href="https://www.facebook.com/ParisBuyerHK/" target="_blank" rel="noopener">Facebook 專頁：Paris Buyer ↗</a>
+      <a href="https://www.facebook.com/groups/paris2cbuyer" target="_blank" rel="noopener">Facebook 群組：歐洲名牌特搜群 ↗</a>
+    </nav>
   </div>
 </footer>
 
